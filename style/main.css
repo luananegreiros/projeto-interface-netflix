@@ -1,0 +1,170 @@
+:root{
+    --blue: rgba(144, 225, 250, 0.808) ;
+    --preto: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+
+body {
+    background: white;
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /* defaut*/
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+.container img{
+    max-width: 25%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+header nav a{
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+header nav a:hover{
+    color: var(--blue);
+    transition: .3s ease all;
+}
+
+/*filme principal*/
+
+.filme-principal {
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('../img/totoro.jpg');
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 3%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px; 
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5%;
+}
+
+.botao:hover{
+    background-color: var(--blue);
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.carrossel-filmes{
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 3%;
+}
+
+.item{
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.item:hover{
+    -webkit-transform: scale(0.9, 0.9);
+   transform: scale(0.9, 0.9);
+}
+
+.nome-filme{
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    text-align: center;
+    
+}
+
+.nome-filme:hover{
+    color: var(--blue);
+    transition: .3s ease all;
+}
+
+.gif {
+    display: flex;
+    justify-content: center;
+}
+
+.gif img{
+    width: 10%;
+    margin-top: 30px;
+}
+
+
+.quote{
+    color: #aaa;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.quote2{
+    color: #aaa;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
